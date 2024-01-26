@@ -10,6 +10,7 @@ While we develop the `lunapi` Python package, we will suppo
 
 ### 1) Install Docker Desktop
 
+<img src="img/docker1.png.png" width="50%" height="50%" align="center">
 ![img](img/docker1.png)
 
 ### 2) Pull the latest LunAPI image
@@ -18,9 +19,11 @@ While we develop the `lunapi` Python package, we will suppo
 
 ### 3) Get the tutorial and reference notebooks
 
-![img](img/download.png)
+<p align="center" width="100%">
+ <img src="img/download.png" width="50%" height="50%" align="center">
+</p>
 
-<img src="img/download.png" width="50%" height="50%" align="center">
+
 
 ### 4) Start LunAPI 
 
