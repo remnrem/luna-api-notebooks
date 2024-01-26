@@ -17,7 +17,7 @@ While we develop the `lunapi` Python package, we will suppo
 ### 2) Pull the latest LunAPI image
 
 <p align="center" width="100%">
- <img src="img/pull.png" width="80%" height="80%">
+ <img src="img/pull.png" width="100%" height="100%">
 </p>
 
 ![img](img/pull.png)
@@ -33,14 +33,18 @@ While we develop the `lunapi` Python package, we will suppo
 Move to the folder you downloaded the notebooks to and start _LunAPI_.
 
 <p align="center" width="100%">
- <img src="img/start.png" width="80%" height="80%" align="center">
+ <img src="img/run.png" width="100%" height="100%" align="center">
+</p>
+
+<p align="center" width="100%">
+ <img src="img/start.png" width="100%" height="100%" align="center">
 </p>
 
 This will start a container running a Jupyter Lab notebook environment, with Luna and
 associated data and models all pre-installed. 
 
 <p align="center" width="100%">
- <img src="img/nb.png" width="95%" height="95%">
+ <img src="img/nb.png" width="100%" height="100%">
 </p>
 
 
