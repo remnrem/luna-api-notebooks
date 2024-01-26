@@ -42,6 +42,10 @@ There is plenty of help on the Docker pages if you get stuck.
 After installing Docker, use the command line to _pull_ the latest version
 of `lunapi`:
 
+```
+docker pull remnrem/lunapi
+```
+
 <p align="center" width="100%">
  <img src="img/pull.png" width="100%" height="100%">
 </p>
