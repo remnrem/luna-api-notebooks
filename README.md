@@ -10,10 +10,15 @@ While we develop the `lunapi` Python package, we will suppo
 
 ### 1) Install Docker Desktop
 
-<img src="img/docker1.png.png" width="50%" height="50%" align="center">
-![img](img/docker1.png)
+<p align="center" width="100%">
+ <img src="img/docker1.png" width="70%" height="70%">
+</p>
 
 ### 2) Pull the latest LunAPI image
+
+<p align="center" width="100%">
+ <img src="img/pull.png" width="80%" height="80%">
+</p>
 
 ![img](img/pull.png)
 
@@ -23,19 +28,20 @@ While we develop the `lunapi` Python package, we will suppo
  <img src="img/download.png" width="50%" height="50%" align="center">
 </p>
 
-
-
 ### 4) Start LunAPI 
 
 Move to the folder you downloaded the notebooks to and start _LunAPI_.
 
-![img](img/start.png)
+<p align="center" width="100%">
+ <img src="img/start.png" width="80%" height="80%" align="center">
+</p>
 
 This will start a container running a Jupyter Lab notebook environment, with Luna and
 associated data and models all pre-installed. 
 
-![img](img/nb.png)
-
+<p align="center" width="100%">
+ <img src="img/nb.png" width="95%" height="95%">
+</p>
 
 
 
