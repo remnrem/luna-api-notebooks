@@ -20,7 +20,7 @@ While we develop the `lunapi` Python package, we will suppo
 
 ![img](img/download.png)
 
-<img src="download.png" width="150" height="280">
+<img src="img/download.png" width="200" height="200" align="center">
 
 ### 4) Start LunAPI 
 
