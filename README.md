@@ -67,9 +67,9 @@ or simply download a Zip file from the links at the top of this page:
 
 ### 4) Start LunAPI 
 
-Move to the folder where you downloaded the notebooks (`luna-api-notebooks/`) to
+Move to the folder where you downloaded the notebooks (`luna-api-notebooks/`)
 and start _LunAPI_ by running this Docker command:  (this is the point you'd start from
-having already downloaded the above, when starting a new session):
+having already downloaded the above, i.e. when starting a new session):
 
 ```
 docker run --rm -p 8888:8888 -v ${PWD}:/lunapi/ remnrem/lunapi
@@ -79,7 +79,8 @@ docker run --rm -p 8888:8888 -v ${PWD}:/lunapi/ remnrem/lunapi
  <img src="img/run.png" width="100%" height="100%" align="center">
 </p>
 
-> [!NOTE] See the Docker documentation for more details on using
+> [!NOTE]
+> See the Docker documentation for more details on using
 > Docker.  The above command `run`'s the image `remnrem/lunapi`
 > (i.e. as you just downloaded from the
 > [DockerHub](http://hub.docker.com) repository).  The additional
@@ -91,26 +92,19 @@ docker run --rm -p 8888:8888 -v ${PWD}:/lunapi/ remnrem/lunapi
 > your machine from the container.  See Docker options for more
 > functions, e.g. it is easy to map multiple folders (or specify a
 > folder other than the working directory, e.g. `-v
-> /home/john/data/:/lunapi/`), etc.  One tip is that it is better not
-> to map your whole home folder for performance reasons.
+> /home/john/data/:/lunapi/` using the form `local:container`), etc.
+> One tip is that it is better not to map your whole home folder for
+> performance reasons.
 
 After running the above, you should see some text from Jupyter Lab's
-start-up logging in the window (most of which you can ignore,
-including most warnings that may appear from JupyterLab subsequently
-in that terminal window).  We'll streamline this later, but for now:
-to access Jupyter Lab just look for the line starting
-`http://127.0.0.1` (which is your local machine).
+start-up log in the window (most of which you can safely ignore,
+including various warnings that may subsequently appear from JupyterLab 
+in that terminal window).  We'll try to streamline this later, but for now:
+to access Jupyter Lab, look for the line (it may appear twice) starting
+`http://127.0.0.1` (which is your local machine), for example:
 
 <p align="center" width="100%">
  <img src="img/start.png" width="100%" height="100%" align="center">
-</p>
-
-Copy-and-paste the whole line (with the token) into your web browser and you
-should see an instance of Jupyter Lab is already running and ready to
-start analysis (i.e. start with `import lunapi as lp`):
-
-<p align="center" width="100%">
- <img src="img/nb.png" width="100%" height="100%">
 </p>
 
 e.g. in this particular instance, this is the link to be copied:
@@ -120,10 +114,18 @@ http://127.0.0.1:8888/lab?token=df46b121be42d19f70d647af90b569b1240c668f41bf1b57
 > [!TIP]
 > Note that the token will be different each time, do not try to use the exact link above.
 
-Keep the terminal window open (can be backgrounded) in order to keep the Jupyter Lab instance
-running locally on your machine.
+Copy-and-paste the whole line (with the token) into your web browser and you
+should see an instance of Jupyter Lab is already running and ready to
+start analysis (i.e. start with `import lunapi as lp`):
+
+<p align="center" width="100%">
+ <img src="img/nb.png" width="100%" height="100%">
+</p>
 
 Open the notebooks (`.ipynb` files) to follow the tutorial and reference material for `lunapi`.  
+
+Keep the terminal window open (can be backgrounded) in order to keep the Jupyter Lab instance
+running locally on your machine.
 
 > [!CAUTION]
 > Without altering configuration files, you can only have a single instance of Jupyter Lab and the LunAPI docker running
