@@ -18,27 +18,44 @@ Jupyter Lab interactive notebook environment.
 > We will soon be distributing binary wheels for all major
 > platforms and Python versions via PyPI.  In the mean time,
 > experienced users are free to compile the project locally
-> (installing [Luna] and [LunaAPI](http://github.com/remnrem/luna-api)
-> and building themselves (e.g. invoking the scikit-build-core/CMake
-> build system, with the Luna library pre-installed).  Notes on this
-> process will be added in the future: for now, this Docker version is
-> the suggested way to get started.
+> (i.e. pre-installing [Luna](http://github.com/remnrem/luna-base) and
+> [LunaAPI](http://github.com/remnrem/luna-api) and invoking
+> the scikit-build-core/CMake build system).
+> Notes on this process will be
+> added in the future: for now, this Docker version is the suggested
+> way to get started.
 
 ### 1) Install Docker Desktop
+
+First, download a free copy of [Docker Desktop](http://www.docker.com)
+for your machine.  If using a Mac, be sure to select the correct chip
+type (Apple vs Intel).
 
 <p align="center" width="100%">
  <img src="img/docker1.png" width="70%" height="70%">
 </p>
 
+There is plenty of help on the Docker pages if you get stuck.
+
 ### 2) Pull the latest LunAPI image
+
+After installing Docker, use the command line to _pull_ the latest version
+of `lunapi`:
 
 <p align="center" width="100%">
  <img src="img/pull.png" width="100%" height="100%">
 </p>
 
-![img](img/pull.png)
+> [!TIP]
+> You can always use this command subsequently to check that the version you are using
+> is up-to-date.
+
 
 ### 3) Get the tutorial and reference notebooks
+
+Next, get the tutorial and reference notebooks from this repository. These are not required
+but will be helpful to get you started.   For example, you can use `git clone` from the command line,
+or simply download a Zip file from the links at the top of this page:
 
 <p align="center" width="100%">
  <img src="img/download.png" width="50%" height="50%" align="center">
@@ -46,23 +63,38 @@ Jupyter Lab interactive notebook environment.
 
 ### 4) Start LunAPI 
 
-Move to the folder you downloaded the notebooks to and start _LunAPI_.
+Move to the folder where you downloaded the notebooks (`luna-api-notebooks/`) to
+and start _LunAPI_ by running this Docker command:
 
 <p align="center" width="100%">
  <img src="img/run.png" width="100%" height="100%" align="center">
 </p>
 
+> [!NOTE]
+> See the Docker documentation for more details on using Docker.  The above command `run`'s the image
+> `remnrem/lunapi` (i.e. as you just downloaded from the [DockerHub](http://hub.docker.com) repository).
+> The additional options 1) stop the container when you finish (`--rm`), 2) map port 8888 from the container
+> to port 8888 on your machine, so that you can access Jupyter Lab via your local web browser, and 3) map
+> your current folder on your local machine (${PWD}) to the folder `/lunapi/` in the container, so that you can
+> read/write files to your machine from the container.  See Docker options for more functions, e.g. it is easy to
+> map multiple containers, etc.    One tip is that it is better not to map your whole home folder for performance
+> reasons. 
+
+After running the above, you should see some text from Jupyter Lab's start up in the window.  We'll streamline this
+later, but for now to access Jupyter Lab just look for the line starting `http://127.0.0.1` (which is your local machine).
+
 <p align="center" width="100%">
  <img src="img/start.png" width="100%" height="100%" align="center">
 </p>
 
-This will start a container running a Jupyter Lab notebook environment, with Luna and
-associated data and models all pre-installed. 
+Past the whole line (with the token) into your web browser and you should see an instance of Jupyter Lab is already running
+and ready to start analysis (i.e. start with `import lunapi as lp`):
 
 <p align="center" width="100%">
  <img src="img/nb.png" width="100%" height="100%">
 </p>
 
+Open the notebooks (`.ipynb` files) to follow the tutorial and reference material for `lunapi`.  
 
 
 ## More information
