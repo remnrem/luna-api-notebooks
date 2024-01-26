@@ -116,28 +116,29 @@ http://127.0.0.1:8888/lab?token=df46b121be42d19f70d647af90b569b1240c668f41bf1b57
 
 Copy-and-paste the whole line (with the token) into your web browser and you
 should see an instance of Jupyter Lab is already running and ready to
-start analysis (i.e. start with `import lunapi as lp`):
+start analysis! For example, here we first `import lunapi as lp` and then run
+the POPS automated stager on an NSRR tutorial EDF:
 
 <p align="center" width="100%">
  <img src="img/nb.png" width="100%" height="100%">
 </p>
 
-Open the notebooks (`.ipynb` files) to follow the tutorial and reference material for `lunapi`.  
+For more details, open the notebooks (`.ipynb` files) to follow the tutorial and reference material for `lunapi`.  
 
 Keep the terminal window open (can be backgrounded) in order to keep the Jupyter Lab instance
 running locally on your machine.
 
 > [!CAUTION]
-> Without altering configuration files, you can only have a single instance of Jupyter Lab and the LunAPI docker running
+> Without altering configuration files, you can only have a single instance of Jupyter Lab and LunAPI container running
 > at any one time.
 
 ## More information
 
 The main Luna documentation pages can be found at
-[http://zzz.bwh.harvard.edu], which describes how to work with Luna,
-its command scripting language and the range of commands available.
+[http://zzz.bwh.harvard.edu](), which describes how to work with Luna,
+its command scripting language and the range of analyses available.
 
 Currently, all documentation related to the Python interface
-(specifically _LunAPI_, or the Python package `lunapi`) are in the
-Jupyter notebooks in this repository.
+(i.e. _LunAPI_, equivalently termed as the Python package `lunapi`)
+are in the Jupyter notebooks in this repository.
 
