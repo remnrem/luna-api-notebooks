@@ -135,7 +135,7 @@ running locally on your machine.
 ## More information
 
 The main Luna documentation pages can be found at
-[http://zzz.bwh.harvard.edu](), which describes how to work with Luna,
+[http://zzz.bwh.harvard.edu/luna](http://zzz.bwh.harvard.edu/luna), which describes how to work with Luna,
 its command scripting language and the range of analyses available.
 
 Currently, all documentation related to the Python interface
