@@ -14,7 +14,7 @@ and allows `lunapi` to be bundled with a set of associated models and
 resources (e.g. tutorial data, staging models, etc) embedded within a
 Jupyter Lab interactive notebook environment.
 
-!!! info "Future distribution plans" We will soon be distributing
+!!!info "Future distribution plans" We will soon be distributing
     binary wheels for all major platforms and Python versions via
     PyPI.  In the mean time, experienced users are free to compile the
     project locally (installing [Luna] and
