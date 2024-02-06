@@ -14,6 +14,19 @@ and allows `lunapi` to be bundled with a set of associated models and
 resources (e.g. tutorial data, staging models, etc) embedded within a
 Jupyter Lab interactive notebook environment.
 
+There are four easy steps:
+
+ - Install [Docker Desktop](http://www.docker.com)
+
+ - Pull the `lunapi` Docker image: `docker pull remnrem/lunapi`
+
+ - Grab the notebooks in this repo: `git clone https://github.com/remnrem/luna-api-notebooks.git`
+
+ - Fire up a container with Jupyter Lab bundled with Luna and other resources: `docker run --rm -p 8888:8888 -v ${PWD}:/lunapi/ remnrem/lunapi`
+
+See the notes below for more details.
+
+ 
 > [!NOTE]
 > We will soon be distributing binary wheels for all major
 > platforms and Python versions via PyPI.  In the mean time,
