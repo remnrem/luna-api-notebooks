@@ -18,11 +18,20 @@ There are four easy steps:
 
  - Install [Docker Desktop](http://www.docker.com)
 
- - Pull the `lunapi` Docker image: `docker pull remnrem/lunapi`
+ - Pull the `lunapi` Docker image:
+   ```
+   docker pull remnrem/lunapi
+   ```
 
- - Grab the notebooks in this repo: `git clone https://github.com/remnrem/luna-api-notebooks.git`
+ - Grab the notebooks in this repo:
+   ```
+   git clone https://github.com/remnrem/luna-api-notebooks.git
+   ```
 
- - Fire up a container with Jupyter Lab bundled with Luna and other resources: `docker run --rm -p 8888:8888 -v ${PWD}:/lunapi/ remnrem/lunapi`
+ - Fire up a container with Jupyter Lab bundled with Luna and other resources:
+   ```
+   docker run --rm -p 8888:8888 -v ${PWD}:/lunapi/ remnrem/lunapi
+   ```
 
 See the notes below for more details.
 
