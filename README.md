@@ -7,12 +7,39 @@ analysis of sleep signal data.
 
 ## Getting started
 
-While we develop the `lunapi` Python package, we are primarily
-supporting a Docker-based installation.  This ensures that the same
-functionality is available on all platforms (Windows, macOS and Linux)
-and allows `lunapi` to be bundled with a set of associated models and
-resources (e.g. tutorial data, staging models, etc) embedded within a
-Jupyter Lab interactive notebook environment.
+Although some binary wheels are available via
+[PyPI](https://pypi.org/project/lunapi/) for macOS (Intel and Silicon
+chips) and Linux (Intel x86_64), while we develop the `lunapi` Python
+package, we are primarily supporting a Docker-based installation.
+This ensures that the same functionality is available on all platforms
+(Windows, macOS and Linux) and allows `lunapi` to be bundled with a
+set of associated models and resources (e.g. tutorial data, staging
+models, etc) embedded within a Jupyter Lab interactive notebook
+environment.
+
+> [!NOTE]
+> Experienced users are free to compile the project locally
+> (i.e. pre-installing [Luna](http://github.com/remnrem/luna-base) and
+> [LunaAPI](http://github.com/remnrem/luna-api) and invoking
+> the scikit-build-core/CMake build system).  Installation notes will be
+> added to the `luna-api` repo in time.
+
+
+### pip installation
+
+On macOS or Linux distributions, you can try:
+
+```
+pip install lunapi
+```
+
+If this doesn't support your current platform/Python installation (or
+you use Windows), you should use the Docker image (below).  There are
+no source wheels currently distributed: we'll look to adding these for
+Linux in due course.
+
+
+### Docker installation
 
 There are four easy steps:
 
@@ -35,17 +62,11 @@ There are four easy steps:
 
 See the notes below for more details.
 
+
+
+
+
  
-> [!NOTE]
-> We will soon be distributing binary wheels for all major
-> platforms and Python versions via PyPI.  In the mean time,
-> experienced users are free to compile the project locally
-> (i.e. pre-installing [Luna](http://github.com/remnrem/luna-base) and
-> [LunaAPI](http://github.com/remnrem/luna-api) and invoking
-> the scikit-build-core/CMake build system).
-> Notes on this process will be
-> added in the future: for now, this Docker version is the suggested
-> way to get started.
 
 ### 1) Install Docker Desktop
 
