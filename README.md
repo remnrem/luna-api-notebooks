@@ -69,10 +69,6 @@ See the notes below for more details.
 
 
 
-
-
- 
-
 ### 1) Install Docker Desktop
 
 First, download a free copy of [Docker Desktop](http://www.docker.com)

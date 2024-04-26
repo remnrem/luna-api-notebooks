@@ -8,7 +8,7 @@
 % optional:  ${no_filter}  no filtering, i.e. assume pre-filtered [ default = apply the filter ] 
 
 % make a copy, i.e. do not alter the original signal
-COPY sig=${s} tag=F
+COPY sig=${s} tag=_F
 
 % optionally reference to mastoid (requires ${m} to be set to mastoid channel)
 [[ do_reref
@@ -24,7 +24,7 @@ FILTER sig=${s}_F bandpass=0.3,35 tw=0.2 ripple=0.01
 ]] !no_filter
 
 % copy filtered signal to make a normalized signal
-COPY sig=${s}_F tag=N
+COPY sig=${s}_F tag=_N
 ROBUST-NORM sig=${s}_F_N epoch winsor=0.002
 
 % optionally, run the EDGER tool (using only the filtered signal)
