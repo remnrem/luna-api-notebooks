@@ -27,7 +27,7 @@ environment.
 
 ### pip installation
 
-On macOS or Linux distributions, you can try:
+To install using `pip` (on macOS, Windows or Linux distributions) you can try:
 
 ```
 pip install lunapi
@@ -38,10 +38,10 @@ the notebooks by running `jupyter lab` in the root directory of the
 download (naturally, you must must install
 [JupyterLab](https://jupyter.org/) if you haven't already).
 
-If this doesn't support your current platform/Python installation (or
-you use Windows), you should use the Docker image (below).  There are
-no source wheels currently distributed: we'll look to adding these for
-Linux in due course.
+If this doesn't support your current platform/Python installation, you
+should use the Docker image (below).  There are no source wheels
+currently distributed: we'll look to adding these for Linux in due
+course.
 
 
 ### Docker installation
