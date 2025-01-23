@@ -60,12 +60,19 @@ There are four easy steps:
    git clone https://github.com/remnrem/luna-api-notebooks.git
    ```
 
- - Fire up a container with Jupyter Lab bundled with Luna and other resources:
-   ```
-   docker run --rm -p 8888:8888 -v ${PWD}:/lunapi/ remnrem/lunapi
-   ```
+ - Fire up a container with Jupyter Lab bundled with Luna and other resources, mapping the current folder to the `/lunapi/` folder inside the container:
 
-See the notes below for more details.
+     - on macOS or Linux:
+     ```
+     docker run --rm -p 8888:8888 -v ${PWD}:/lunapi/ remnrem/lunapi
+     ```
+
+     - on Windows
+     ```
+     docker run --rm -p 8888:8888 -v %cd%:/lunapi/ remnrem/lunapi
+     ```
+
+See the notes below for more details. 
 
 
 
@@ -170,7 +177,10 @@ the POPS automated stager on an NSRR tutorial EDF:
 For more details, open the notebooks (`.ipynb` files) to follow the tutorial and reference material for `lunapi`.  
 
 Keep the terminal window open (can be backgrounded) in order to keep the Jupyter Lab instance
-running locally on your machine.
+running locally on your machine.  You should be able to close the Jupyter Lab instance by pressing Ctrl-C
+on the terminal where you initiated it.  (On Windows, this may not work: if so, you can always use the Docker Desktop
+to close any containers.)
+
 
 > [!CAUTION]
 > Without altering configuration files, you can only have a single instance of Jupyter Lab and LunAPI container running
