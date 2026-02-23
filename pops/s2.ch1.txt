@@ -11,33 +11,36 @@
 COPY sig=${s} tag=_F
 
 % optionally reference to mastoid (requires ${m} to be set to mastoid channel)
-[[ do_reref
-REFERENCE sig=${s}_F ref=${m}
-]] do_reref
+IF ?{do_reref}
+
+ REFERENCE sig=${s}_F ref=${m}
+
+FI
 
 % resample, if needed (model is 128 Hz)
 RESAMPLE sig=${s}_F sr=128
 
 % optionally, apply bandpass filter
-[[ !no_filter
-FILTER sig=${s}_F bandpass=0.3,35 tw=0.2 ripple=0.01
-]] !no_filter
+IFNOT ?{no_filter}
+ FILTER sig=${s}_F bandpass=0.3,35 tw=0.2 ripple=0.01
+FI
 
 % copy filtered signal to make a normalized signal
 COPY sig=${s}_F tag=_N
+
 ROBUST-NORM sig=${s}_F_N epoch winsor=0.002
 
 % optionally, run the EDGER tool (using only the filtered signal)
-[[ do_edger
-EDGER sig=${s}_F cache=ec1
-]] do_edger
+IF ?{do_edger}
+ EDGER sig=${s}_F cache=ec1
+FI
 
 % run POPS
 POPS force-reload
- path=${mpath}
- lib=${lib}
- cache=ec1
- alias=CEN,ZEN|${s}_F,${s}_F_N
+ ... path=${mpath}
+ ... lib=${lib}
+ ... cache=ec1
+ ... alias=CEN,ZEN|${s}_F,${s}_F_N
 
 % clean-up
 SIGNALS drop sig=${s}_F,${s}_F_N
