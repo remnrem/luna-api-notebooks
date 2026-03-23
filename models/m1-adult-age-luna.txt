@@ -66,8 +66,8 @@ MASK ifnot=N1
 RE preserve-cache
 
 MTM sig=${cen} nw=2 segment-sec=2 segment-inc=1 detrend
-    delta=0.5-4 theta=4-8 alpha=8-12 sigma=12-20
-    alternate-speckurt epoch
+ ...  delta=0.5-4 theta=4-8 alpha=8-12 sigma=12-20
+ ...  alternate-speckurt epoch
 
 
 % --------------------------------------------------------------------------------
@@ -84,8 +84,8 @@ MASK ifnot=N2
 RE preserve-cache
 
 MTM sig=${cen} nw=2 segment-sec=2 segment-inc=1 detrend
-    delta=0.5-4 theta=4-8 alpha=8-12 sigma=12-20
-    alternate-speckurt epoch
+ ...  delta=0.5-4 theta=4-8 alpha=8-12 sigma=12-20
+ ...  alternate-speckurt epoch
 
 STATS sig=${cen} epoch
 
@@ -108,8 +108,8 @@ MASK ifnot=N3
 RE preserve-cache
 
 MTM sig=${cen} nw=2 segment-sec=2 segment-inc=1 detrend 
-    delta=0.5-4 theta=4-8 alpha=8-12 sigma=12-20
-    alternate-speckurt ratio=DELTA/THETA,DELTA/ALPHA ratio1 epoch
+ ...   delta=0.5-4 theta=4-8 alpha=8-12 sigma=12-20
+ ...   alternate-speckurt ratio=DELTA/THETA,DELTA/ALPHA ratio1 epoch
 
 STATS sig=${cen} epoch
 
