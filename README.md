@@ -57,9 +57,10 @@ There are four easy steps:
    docker pull remnrem/lunapi
    ```
 
- - Grab the notebooks in this repo:
+ - Grab the notebooks in this repo, and change into it:
    ```
    git clone https://github.com/remnrem/luna-api-notebooks.git
+   cd luna-api-notebooks
    ```
 
  - Fire up a container with Jupyter Lab bundled with Luna and other resources, mapping the current folder to the `/lunapi/` folder inside the container:
@@ -197,4 +198,3 @@ its command scripting language and the range of analyses available.
 Currently, all documentation related to the Python interface
 (i.e. _LunAPI_, equivalently termed as the Python package `lunapi`)
 are in the Jupyter notebooks in this repository.
-
